@@ -8,7 +8,7 @@ Follow the instructions below to complete your app.
     * Minimum API level: API 21: Android 5.0 (Lollipop)
 2. Create a User class based on the class diagram below.
 
-![User Class Diagram](/images/user_cd.png)
+![User Class Diagram](/images/user_cd.png) 
 
 3. Create the layout of your main activity according to the figure shown below.
 
