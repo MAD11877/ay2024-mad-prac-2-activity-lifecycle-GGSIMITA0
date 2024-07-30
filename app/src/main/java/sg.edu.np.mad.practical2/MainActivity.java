@@ -1,7 +1,5 @@
 package sg.edu.np.mad.practical2;
 
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,8 +11,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
-    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,20 +22,15 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Initialize a new User object
-        User user = new User("John doe","MAD Developer",1,false);
+        User user = new User("John Doe", "MAD Developer", 1, false);
 
-        //Get the TextViews and Button from the layout
-        TextView tvName = findViewById(R.id.main);
-        @SuppressLint("CutPasteId") TextView tvDescription = findViewById(R.id.button);
-        @SuppressLint("CutPasteId") Button bthFollow = findViewById (R.id.button);
+        TextView tvName = findViewById(R.id.tvName);
+        TextView tvDescription = findViewById(R.id.tvDescription);
+        Button btnFollow = findViewById(R.id.btnFollow);
 
-        //Set the TextViews with the User's name, desc. and default button message
         tvName.setText(user.name);
         tvDescription.setText(user.description);
-        bthFollow.setText("Follow");
-
+        btnFollow.setText("Follow");
 
     }
-
 }
