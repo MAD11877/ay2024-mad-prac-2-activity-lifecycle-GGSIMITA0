@@ -33,7 +33,7 @@
         android:paddingBottom="10dp"
         android:text="Mad Practical"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
